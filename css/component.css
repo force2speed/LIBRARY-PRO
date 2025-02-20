@@ -78,11 +78,11 @@
 }
 
 .cbp-hrsub h4 {
-	color: #00507f;
+	color: #ffffff;
 	padding: 2em 0 0.6em;
 	margin: 0;
 	font-size: 160%;
-	font-weight: 300;
+	font-weight: 600;
 }
 
 /* Examples for media queries */
@@ -132,6 +132,10 @@
 	}
 
 }
+.cbp-hrsub:hover li {
+	color: #002033;
+}
+
 
 @media screen and (max-width: 36em) { 
 	.cbp-hrmenu .cbp-hrsub-inner > div {

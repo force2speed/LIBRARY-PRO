@@ -948,7 +948,18 @@ pre code {
   }
   .col-sm-6 {
     width: 50%;
+    display: none;
+  background-color: #f2f2f2;
+  padding: 1em;
+  border: 1px solid #ccc;
   }
+  /* Hide content by default */
+
+/* When hovering over the parent, show the hidden content */
+.row:hover .col-sm-6 {
+  display: block;
+}
+
   .col-sm-5 {
     width: 41.66666667%;
   }
