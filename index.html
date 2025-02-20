@@ -1,583 +1,865 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>VITCC Library Portal</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="img/logo.jpg"/>
-        <link rel="stylesheet" href="css/Header-Footer.css"/>
-		<link rel="stylesheet" href="css/bootstrap.min.css"/>
-		<link rel="stylesheet" href="css/default.css" />
-		<link rel="stylesheet" href="css/component.css" />
-		<link rel="stylesheet" href="css/social-fixed.css" />
-		<link rel="stylesheet" href="css/component-table.css" />
-        <link rel="stylesheet" href="css/home.css"/>
-        <link rel="stylesheet" href="css/styles.css"/>
-        <link rel="stylesheet" href="css/owl.carousel.css" />
-        <link rel="stylesheet" href="css/owl.theme.css" />
-        <script type="text/javascript" src="jquery/jquery.min.js"></script>
-		<link rel="stylesheet" href="css/home.css"/>
-		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#owl-example1").owlCarousel({
-					items: 3,
-					itemsScaleup: false,
-					rewindSpeed: 500,
-					stopOnHover: true,
-					slideSpeed: 150,
-					autoPlay: true,
-					autoHeight: false,
-					rewindNav: true,
-					navigation: true,
-					navigationText: ["&leftarrow;", "&rightarrow;"],
-					responsive: true,
-					resopsiveRefershRate: 100,
-					mouseDrag: true,
-					touchDrag: true
-				});
 
-				$("#owl-example2").owlCarousel({
-					items: 3,
-					itemsScaleup: false,
-					rewindSpeed: 500,
-					stopOnHover: true,
-					slideSpeed: 150,
-					autoPlay: true,
-					autoHeight: false,
-					rewindNav: true,
-					navigation: true,
-					navigationText: ["&leftarrow;", "&rightarrow;"],
-					responsive: true,
-					resopsiveRefershRate: 100,
-					mouseDrag: true,
-					touchDrag: true
-				});
+<head>
+	<title>VITCC Library Portal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" href="img/logo.jpg" />
+	<link rel="stylesheet" href="css/Header-Footer.css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/default.css" />
+	<link rel="stylesheet" href="css/component.css" />
+	<link rel="stylesheet" href="css/social-fixed.css" />
+	<link rel="stylesheet" href="css/component-table.css" />
+	<link rel="stylesheet" href="css/home.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/owl.carousel.css" />
+	<link rel="stylesheet" href="css/owl.theme.css" />
+	<script type="text/javascript" src="jquery/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/home.css" />
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#owl-example1").owlCarousel({
+				items: 3,
+				itemsScaleup: false,
+				rewindSpeed: 500,
+				stopOnHover: true,
+				slideSpeed: 150,
+				autoPlay: true,
+				autoHeight: false,
+				rewindNav: true,
+				navigation: true,
+				navigationText: ["&leftarrow;", "&rightarrow;"],
+				responsive: true,
+				resopsiveRefershRate: 100,
+				mouseDrag: true,
+				touchDrag: true,
 			});
-		</script>
-		<script type="text/javascript">
-			$(function() {
-				$('#').tooltip('hide')
-			});
-		</script>
-	</head>
-	<body onLoad="show_clock()" class="body-scrollbar">
-		<div class="container-fluid">
-			<div class="container-fluid row" id="main_header">
-				<div class="visible-lg col-lg-2">
-					<a href="#"><img src="img/img.jpg" id="header_logo" class="img-responsive" alt="Responsive image"></a>
-				</div>
-				<div class="col-lg-8 col-md-10 col-xs-12">
 
-					<h1 id="header_font1">Vellore Institue Of Technology Chennai</h1>
-					<h2 id="header_font1">Library Portal</h2>
-				</div>
-				<div class="visible-lg col-lg-2"></div>
+			$("#owl-example2").owlCarousel({
+				items: 3,
+				itemsScaleup: false,
+				rewindSpeed: 500,
+				stopOnHover: true,
+				slideSpeed: 150,
+				autoPlay: true,
+				autoHeight: false,
+				rewindNav: true,
+				navigation: true,
+				navigationText: ["&leftarrow;", "&rightarrow;"],
+				responsive: true,
+				resopsiveRefershRate: 100,
+				mouseDrag: true,
+				touchDrag: true,
+			});
+		});
+	</script>
+	<script type="text/javascript">
+		$(function () {
+			$("#").tooltip("hide");
+		});
+	</script>
+</head>
+
+<body onLoad="show_clock()" class="body-scrollbar">
+	<div class="container-fluid">
+		<div class="container-fluid row" id="main_header">
+			<div class="visible-lg col-lg-2">
+				<a href="#"><img src="img/img.jpg" id="header_logo" class="img-responsive" alt="Responsive image" /></a>
 			</div>
-			<div class="row white_bg" style="margin-top: 5px;">
-				<nav id="cbp-hrmenu" class="cbp-hrmenu">
-					<ul>
-						<li>
-							<a href="#">The Institute Library</a>
-							<div class="cbp-hrsub"  style="z-index: 2">
-								<div class="cbp-hrsub-inner">
-									<div class="row" style="width: 100%">
-										<div class="col-sm-6">
-											<h4 style="color:white">VIT Chennai Library</h4>
-											<p style="color:white">
-												Welcome to VIT Chennai's Library Portal! Dive into one of India’s most advanced and resource-rich libraries, built to international standards. Spanning four floors and covering 2,322.58 square meters, the centrally air-conditioned library offers an extensive collection of reference books, textbooks by national and international authors, journals, and non-book materials across disciplines like Basic Sciences, Engineering and Technology, Law, Fashion Technology, Humanities, and Social Sciences.
-											</p>
-											<p style="color:white">
-												The dedicated efforts of the VIT Chennai library team have resulted in a state-of-the-art library website, aimed at enhancing accessibility and user experience. The library is fully automated using Koha software and features RFID technology with self-service kiosks for easy issuing and returning of books. The website has quickly gained attention for its intuitive design and innovative features, offering services like the Online Public Access Catalogue (WEB-OPAC) and online renewal options.
-											</p>
-											<p style="color:white">
-												With facilities like a Digital Library, video conferencing rooms, reading halls, discussion spaces, and a media resource/NPTEL center, the library fosters a seamless academic and research environment. Its modern infrastructure and comprehensive resources make it a hub for knowledge, innovation, and academic excellence.
-											</p>
-										</div>
-										<div class="col-sm-6">
-											<div>
-												<h4 style="color:white">Gallery</h4>
-												<img src="img/library.jpg" alt="pic" style="width: 100%; box-shadow: 0px 0px 3px 3px  #262626" class="img-responsive"/>
-											</div>
-										</div>
-									</div>
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-						<li>
-							<a href="#">For Leisure</a>
-							<div class="cbp-hrsub" style="z-index: 2">
-								<div class="cbp-hrsub-inner"> 
-									<div>
-										<h4>Fantasy</h4>
-										<ul>
-											<li><a href="view.html">Harry Potter and the Deathly Hallows</a></li>
-											<li><a href="view.html">Harry Potter and the Order of the Phoenix</a></li>
-											<li><a href="view.html">Brisingr</a></li>
-											<li><a href="view.html">Inheritance</a></li>
-										</ul>
-										<h4>Non - Fiction</h4>
-										<ul>
-											<li><a href="view.html">Who Moved My Cheese</a></li>
-											<li><a href="view.html">The Present</a></li>
-											<li><a href="view.html">Blue Umbrella</a></li>
-											<li><a href="view.html">Fifty Shades of Grey</a></li>
-											<li><a href="view.html">Half Girlfriend</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>Literature</h4>
-										<ul>
-											<li><a href="view.html">War and Peace</a></li>
-											<li><a href="view.html">Macbeth</a></li>
-											<li><a href="view.html">Romeo and Juliet</a></li>
-											<li><a href="view.html">The Hamlet</a></li>
-											<li><a href="view.html">The Odyssey</a></li>
-										</ul>
-										<h4>Biographies and Autobiographies</h4>
-										<ul>
-											<li><a href="view.html">Universe in a Nutshell</a></li>
-											<li><a href="view.html">Rearview : My Roadies Journey</a></li>
-											<li><a href="view.html">Mein Kampf</a></li>
-											<li><a href="view.html">Steve Jobs</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>Comics</h4>
-										<ul>
-											<li><a href="view.html">The Infinity Gauntlet</a></li>
-											<li><a href="view.html">Fear Itself</a></li>
-											<li><a href="view.html">Batman : Killing Joke</a></li>
-											<li><a href="view.html">Injustice : Gods Among Us</a></li>
-											<li><a href="view.html">Marvel Civil War</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4><a href="search.html" class="link">Search for Books &rightarrow;</a></h4>
-									</div>
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-						<li>
-							<a href="#">For the Undergraduate</a>
-							<div class="cbp-hrsub" style="z-index: 2">
-								<div class="cbp-hrsub-inner"> 
-									<div>
-										<h4>Programming</h4>
-										<ul>
-											<li><a href="view.html">Data Structures and Algorithms by C++</a></li>
-											<li><a href="view.html">Introduction to Algorithms</a></li>
-											<li><a href="view.html">JSF and AJAX</a></li>
-											<li><a href="view.html">Web Technologies</a></li>
-											<li><a href="view.html">ANSCI C</a></li>
-										</ul>
-										<h4>Mathematics</h4>
-										<ul>
-											<li><a href="view.html">Higher Engineering Mathematics</a></li>
-											<li><a href="view.html">Advanced Mathematics</a></li>
-											<li><a href="view.html">Engineering Integral Calculus</a></li>
-											<li><a href="view.html">Trans-dimensional Geometry</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>Electronic Communication Engineering</h4>
-										<ul>
-											<li><a href="view.html">Gadgets of the Future</a></li>
-											<li><a href="view.html">Integrated Circuits</a></li>
-											<li><a href="view.html">8086 Microprocessor Family</a></li>
-											<li><a href="view.html">Embedded Electronics</a></li>
-										</ul>
-										<h4>Physics</h4>
-										<ul>
-											<li><a href="view.html">Einstein's Theory of Relativity</a></li>
-											<li><a href="view.html">Newton Physics</a></li>
-											<li><a href="view.html">Quantum Physics of an Atom</a></li>
-											<li><a href="view.html">Fluid Mechanics in Aerospace</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>Networking</h4>
-										<ul>
-											<li><a href="view.html">Basics of a Modern Networks</a></li>
-											<li><a href="view.html">Network Security</a></li>
-											<li><a href="view.html">The TCP/IP Model</a></li>
-											<li><a href="view.html">HTTPS Protocol</a></li>
-										</ul>
-										<h4><a href="search.html" class="link">Search for Books &rightarrow;</a></h4>
-									</div>
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-						<li>
-							<a href="#">For the Postgraduate</a>
-							<div class="cbp-hrsub" style="z-index: 2">
-								<div class="cbp-hrsub-inner"> 
-									<div>
-										<h4>Data Analysis</h4>
-										<ul>
-											<li><a href="view.html">Hadoop Programming</a></li>
-											<li><a href="view.html">What is Big Data ?</a></li>
-											<li><a href="view.html">Data Mining</a></li>
-											<li><a href="view.html">Database Management Systems</a></li>
-										</ul>
-										<h4>App Development</h4>
-										<ul>
-											<li><a href="view.html">Advanced Android Programming</a></li>
-											<li><a href="view.html">Objective C for iOS Developers</a></li>
-											<li><a href="view.html">How to Develop Apps Effectively</a></li>
-											<li><a href="view.html">Application Cross-Platform Compatibility</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>Algorithm Design</h4>
-										<ul>
-											<li><a href="view.html">Introduction to Algorithms</a></li>
-											<li><a href="view.html">Advanced Data Structures</a></li>
-											<li><a href="view.html">Programming Paradigms</a></li>
-											<li><a href="view.html">Algorithm Analysis</a></li>
-											<li><a href="view.html">Approximation Algorithms</a></li>
-										</ul>
-										<h4>Programming Languages</h4>
-										<ul>
-											<li><a href="view.html">Compiler Design Paradigms</a></li>
-											<li><a href="view.html">The Java and .NET Platforms</a></li>
-											<li><a href="view.html">Principles of Programming Languages</a></li>
-											<li><a href="view.html">The Functional Programming Languages</a></li>
-										</ul>
-									</div>
-									<div>
-										<h4>Mathematics</h4>
-										<ul>
-											<li><a href="view.html">Mathematics of the Rubick's Cube</a></li>
-											<li><a href="view.html">Complex Integration</a></li>
-											<li><a href="view.html">Mathematical Approximation in Computer Science</a></li>
-										</ul>
-										<h4><a href="search.html" class="link">Search for Books &rightarrow;</a></h4>
-									</div>
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-						<li>
-							<a href="#">Navigate</a>
-							<div class="cbp-hrsub" style="z-index: 2">
-								<div class="cbp-hrsub-inner"> 
-									<div>
-										<h4>Pages in the Portal</h4>
-										<ul>
-											<li><a href="index.html">Home</a></li>
-											<li><a href="search.html">Search for Books</a></li>
-											<li><a href="author.html">Search by Author</a></li>
-											<li><a href="status.html">Check Status</a></li>
-											<li><a href="stats.html">Library Statistics</a></li>
-										</ul>
-									</div>
-								</div><!-- /cbp-hrsub-inner -->
-							</div><!-- /cbp-hrsub -->
-						</li>
-					</ul>
-				</nav>
+			<div class="col-lg-8 col-md-10 col-xs-12">
+				<h1 id="header_font1">Vellore Institue Of Technology Chennai</h1>
+				<h2 id="header_font1">Library Portal</h2>
 			</div>
+			<div class="visible-lg col-lg-2"></div>
 		</div>
-		<script src="js/cbpHorizontalMenu.min.js"></script>
-		<script>
-		$(function() {
+		<div class="row white_bg" style="margin-top: 5px">
+			<nav id="cbp-hrmenu" class="cbp-hrmenu">
+				<ul>
+					<li>
+						<a href="#" style="
+                  padding: 1em;
+                  color: #000;
+                  transition: background-color 0.3s ease, color 0.3s ease;
+                  text-decoration: none;
+                " onmouseover="this.setAttribute('style', 'padding: 1em; background-color: #00507f !important; color: #fff !important; transition: background-color 0.3s ease, color 0.3s ease; text-decoration: none;');"
+							onmouseout="this.setAttribute('style', 'padding: 1em; background-color:  !important; color: #000 !important; transition: background-color 0.3s ease, color 0.3s ease; text-decoration: none;');">
+							The Institute Library
+						</a>
+						<div class="cbp-hrsub" style="z-index: 2">
+							<div class="cbp-hrsub-inner">
+								<div class="row" style="width: 100%">
+									<div class="col-sm-6">
+										<h4 style="color: white">VIT Chennai Library</h4>
+										<p style="color: white">
+											Welcome to VIT Chennai's Library Portal! Dive into one
+											of India’s most advanced and resource-rich libraries,
+											built to international standards. Spanning four floors
+											and covering 2,322.58 square meters, the centrally
+											air-conditioned library offers an extensive collection
+											of reference books, textbooks by national and
+											international authors, journals, and non-book materials
+											across disciplines like Basic Sciences, Engineering and
+											Technology, Law, Fashion Technology, Humanities, and
+											Social Sciences.
+										</p>
+										<p style="color: white">
+											The dedicated efforts of the VIT Chennai library team
+											have resulted in a state-of-the-art library website,
+											aimed at enhancing accessibility and user experience.
+											The library is fully automated using Koha software and
+											features RFID technology with self-service kiosks for
+											easy issuing and returning of books. The website has
+											quickly gained attention for its intuitive design and
+											innovative features, offering services like the Online
+											Public Access Catalogue (WEB-OPAC) and online renewal
+											options.
+										</p>
+										<p style="color: white">
+											With facilities like a Digital Library, video
+											conferencing rooms, reading halls, discussion spaces,
+											and a media resource/NPTEL center, the library fosters a
+											seamless academic and research environment. Its modern
+											infrastructure and comprehensive resources make it a hub
+											for knowledge, innovation, and academic excellence.
+										</p>
+									</div>
+									<div class="col-sm-6">
+										<div>
+											<h4 style="color: white">Gallery</h4>
+											<img src="img/library.jpg" alt="pic" style="
+                            width: 100%;
+                            box-shadow: 0px 0px 3px 3px #262626;
+                          " class="img-responsive" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /cbp-hrsub-inner -->
+						</div>
+						<!-- /cbp-hrsub -->
+					</li>
+					<li>
+						<a href="#" style="
+                  padding: 1em;
+                  color: #000;
+                  transition: background-color 0.3s ease, color 0.3s ease;
+                  text-decoration: none;
+                " onmouseover="this.setAttribute('style', 'padding: 1em; background-color: #00507f !important; color: #fff !important; transition: background-color 0.3s ease, color 0.3s ease; text-decoration: none;');"
+							onmouseout="this.setAttribute('style', 'padding: 1em; background-color:  !important; color: #000 !important; transition: background-color 0.3s ease, color 0.3s ease; text-decoration: none;');">
+							For Leisure
+						</a>
+
+						<div class="cbp-hrsub" style="z-index: 2">
+							<div class="cbp-hrsub-inner">
+								<div>
+									<h4>Fantasy</h4>
+									<ul>
+										<li>
+											<a href="view.html">Harry Potter and the Deathly Hallows</a>
+										</li>
+										<li>
+											<a href="view.html">Harry Potter and the Order of the Phoenix</a>
+										</li>
+										<li><a href="view.html">Brisingr</a></li>
+										<li><a href="view.html">Inheritance</a></li>
+									</ul>
+									<h4>Non - Fiction</h4>
+									<ul>
+										<li><a href="view.html">Who Moved My Cheese</a></li>
+										<li><a href="view.html">The Present</a></li>
+										<li><a href="view.html">Blue Umbrella</a></li>
+										<li><a href="view.html">Fifty Shades of Grey</a></li>
+										<li><a href="view.html">Half Girlfriend</a></li>
+									</ul>
+								</div>
+								<div>
+									<h4>Literature</h4>
+									<ul>
+										<li><a href="view.html">War and Peace</a></li>
+										<li><a href="view.html">Macbeth</a></li>
+										<li><a href="view.html">Romeo and Juliet</a></li>
+										<li><a href="view.html">The Hamlet</a></li>
+										<li><a href="view.html">The Odyssey</a></li>
+									</ul>
+									<h4>Biographies and Autobiographies</h4>
+									<ul>
+										<li><a href="view.html">Universe in a Nutshell</a></li>
+										<li>
+											<a href="view.html">Rearview : My Roadies Journey</a>
+										</li>
+										<li><a href="view.html">Mein Kampf</a></li>
+										<li><a href="view.html">Steve Jobs</a></li>
+									</ul>
+								</div>
+								<div>
+									<h4>Comics</h4>
+									<ul>
+										<li><a href="view.html">The Infinity Gauntlet</a></li>
+										<li><a href="view.html">Fear Itself</a></li>
+										<li><a href="view.html">Batman : Killing Joke</a></li>
+										<li><a href="view.html">Injustice : Gods Among Us</a></li>
+										<li><a href="view.html">Marvel Civil War</a></li>
+									</ul>
+								</div>
+								<div>
+									<h4>
+										<a href="search.html" class="link">Search for Books &rightarrow;</a>
+									</h4>
+								</div>
+							</div>
+							<!-- /cbp-hrsub-inner -->
+						</div>
+						<!-- /cbp-hrsub -->
+					</li>
+					<li>
+						<a href="#" style="
+                  padding: 1em;
+                  color: #000;
+                  transition: background-color 0.3s ease, color 0.3s ease;
+                  text-decoration: none;
+                " onmouseover="this.setAttribute('style', 'padding: 1em; background-color: #00507f !important; color: #fff !important; transition: background-color 0.3s ease, color 0.3s ease; text-decoration: none;');"
+							onmouseout="this.setAttribute('style', 'padding: 1em; background-color:  !important; color: #000 !important; transition: background-color 0.3s ease, color 0.3s ease; text-decoration: none;');">
+							For the Undergraduate
+						</a>
+						<div class="cbp-hrsub" style="z-index: 2">
+							<div class="cbp-hrsub-inner">
+								<div>
+									<h4>Programming</h4>
+									<ul>
+										<li>
+											<a href="view.html">Data Structures and Algorithms by C++</a>
+										</li>
+										<li>
+											<a href="view.html">Introduction to Algorithms</a>
+										</li>
+										<li><a href="view.html">JSF and AJAX</a></li>
+										<li><a href="view.html">Web Technologies</a></li>
+										<li><a href="view.html">ANSCI C</a></li>
+									</ul>
+									<h4>Mathematics</h4>
+									<ul>
+										<li>
+											<a href="view.html">Higher Engineering Mathematics</a>
+										</li>
+										<li><a href="view.html">Advanced Mathematics</a></li>
+										<li>
+											<a href="view.html">Engineering Integral Calculus</a>
+										</li>
+										<li>
+											<a href="view.html">Trans-dimensional Geometry</a>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h4>Electronic Communication Engineering</h4>
+									<ul>
+										<li><a href="view.html">Gadgets of the Future</a></li>
+										<li><a href="view.html">Integrated Circuits</a></li>
+										<li>
+											<a href="view.html">8086 Microprocessor Family</a>
+										</li>
+										<li><a href="view.html">Embedded Electronics</a></li>
+									</ul>
+									<h4>Physics</h4>
+									<ul>
+										<li>
+											<a href="view.html">Einstein's Theory of Relativity</a>
+										</li>
+										<li><a href="view.html">Newton Physics</a></li>
+										<li>
+											<a href="view.html">Quantum Physics of an Atom</a>
+										</li>
+										<li>
+											<a href="view.html">Fluid Mechanics in Aerospace</a>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h4>Networking</h4>
+									<ul>
+										<li>
+											<a href="view.html">Basics of a Modern Networks</a>
+										</li>
+										<li><a href="view.html">Network Security</a></li>
+										<li><a href="view.html">The TCP/IP Model</a></li>
+										<li><a href="view.html">HTTPS Protocol</a></li>
+									</ul>
+									<h4>
+										<a href="search.html" class="link">Search for Books &rightarrow;</a>
+									</h4>
+								</div>
+							</div>
+							<!-- /cbp-hrsub-inner -->
+						</div>
+						<!-- /cbp-hrsub -->
+					</li>
+					<li>
+						<a href="#" style="
+                  padding: 1em;
+                  color: #000;
+                  transition: background-color 0.3s ease, color 0.3s ease;
+                  text-decoration: none;
+                " onmouseover="this.setAttribute('style', 'padding: 1em; background-color: #00507f !important; color: #fff !important; transition: background-color 0.3s ease, color 0.3s ease; text-decoration: none;');"
+							onmouseout="this.setAttribute('style', 'padding: 1em; background-color:  !important; color: #000 !important; transition: background-color 0.3s ease, color 0.3s ease; text-decoration: none;');">For
+							the Postgraduate</a>
+						<div class="cbp-hrsub" style="z-index: 2">
+							<div class="cbp-hrsub-inner">
+								<div>
+									<h4>Data Analysis</h4>
+									<ul>
+										<li><a href="view.html">Hadoop Programming</a></li>
+										<li><a href="view.html">What is Big Data ?</a></li>
+										<li><a href="view.html">Data Mining</a></li>
+										<li>
+											<a href="view.html">Database Management Systems</a>
+										</li>
+									</ul>
+									<h4>App Development</h4>
+									<ul>
+										<li>
+											<a href="view.html">Advanced Android Programming</a>
+										</li>
+										<li>
+											<a href="view.html">Objective C for iOS Developers</a>
+										</li>
+										<li>
+											<a href="view.html">How to Develop Apps Effectively</a>
+										</li>
+										<li>
+											<a href="view.html">Application Cross-Platform Compatibility</a>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h4>Algorithm Design</h4>
+									<ul>
+										<li>
+											<a href="view.html">Introduction to Algorithms</a>
+										</li>
+										<li><a href="view.html">Advanced Data Structures</a></li>
+										<li><a href="view.html">Programming Paradigms</a></li>
+										<li><a href="view.html">Algorithm Analysis</a></li>
+										<li><a href="view.html">Approximation Algorithms</a></li>
+									</ul>
+									<h4>Programming Languages</h4>
+									<ul>
+										<li><a href="view.html">Compiler Design Paradigms</a></li>
+										<li>
+											<a href="view.html">The Java and .NET Platforms</a>
+										</li>
+										<li>
+											<a href="view.html">Principles of Programming Languages</a>
+										</li>
+										<li>
+											<a href="view.html">The Functional Programming Languages</a>
+										</li>
+									</ul>
+								</div>
+								<div>
+									<h4>Mathematics</h4>
+									<ul>
+										<li>
+											<a href="view.html">Mathematics of the Rubick's Cube</a>
+										</li>
+										<li><a href="view.html">Complex Integration</a></li>
+										<li>
+											<a href="view.html">Mathematical Approximation in Computer Science</a>
+										</li>
+									</ul>
+									<h4>
+										<a href="search.html" class="link">Search for Books &rightarrow;</a>
+									</h4>
+								</div>
+							</div>
+							<!-- /cbp-hrsub-inner -->
+						</div>
+						<!-- /cbp-hrsub -->
+					</li>
+					<li>
+						<a href="#" style="
+                  padding: 1em;
+                  color: #000;
+                  transition: background-color 0.3s ease, color 0.3s ease;
+                  text-decoration: none;
+                " onmouseover="this.setAttribute('style', 'padding: 1em; background-color: #00507f !important; color: #fff !important; transition: background-color 0.3s ease, color 0.3s ease; text-decoration: none;');"
+							onmouseout="this.setAttribute('style', 'padding: 1em; background-color:  !important; color: #000 !important; transition: background-color 0.3s ease, color 0.3s ease; text-decoration: none;');">Navigate</a>
+						<div class="cbp-hrsub" style="z-index: 2">
+							<div class="cbp-hrsub-inner">
+								<div>
+									<h4>Pages in the Portal</h4>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<li><a href="search.html">Search for Books</a></li>
+										<li><a href="author.html">Search by Author</a></li>
+										<li><a href="status.html">Check Status</a></li>
+										<li><a href="stats.html">Library Statistics</a></li>
+									</ul>
+								</div>
+							</div>
+							<!-- /cbp-hrsub-inner -->
+						</div>
+						<!-- /cbp-hrsub -->
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<script src="js/cbpHorizontalMenu.min.js"></script>
+	<script>
+		$(function () {
 			cbpHorizontalMenu.init();
 		});
-		</script>
-		<!--================== Browse by Category ==================-->
-		<div class="container">
-			<br>
-			<h3>Browse books by Category -</h3>
+	</script>
+	<!--================== Browse by Category ==================-->
+	<!-- Slideshow Section -->
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  <img src="img/G1.jpg" class="img-fluid">
+		  <div class="floor-text">Third Floor</div>
 		</div>
-		<div id="owl-example1" class="owl-carousel container-fluid white_bg" style="box-shadow: none;">
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/literature.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Literature Books
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/fiction.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Fiction and Fantasy Books
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/comic.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Comics
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/non-fiction.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Non Fiction
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/network.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Networking
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/program.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Computer Programming
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/algorithm.png" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						App Development
-					</div>
-				</a>
-			</div>
+		<div class="mySlides fade">
+		  <img src="img/G2.jpg" class="img-fluid">
+		  <div class="floor-text">Third Floor</div>
 		</div>
-		<!--======End of Browse by Category ======-->
-		<!--====== Browse by Courses ======-->
-		<div class="container">
-			<br>
-			<h3>Browse books by Institute Courses -</h3>
+		<div class="mySlides fade">
+		  <img src="img/G3.jpg" class="img-fluid">
+		  <div class="floor-text">Second Floor</div>
 		</div>
-		<div id="owl-example2" class="owl-carousel container-fluid white_bg" style="box-shadow: none;">
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/data-structures.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Data Structures
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/daa.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Design and Analysis of Algorithms
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/signal-processing.png" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Signal Processing
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/algorithm.png" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						App Development
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/app.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Software Development
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/network.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Networking
-					</div>
-				</a>
-			</div>
-			<div class="owl-item"><br>
-				<a href="category.html">
-					<img src="img/program.jpg" alt="pic" id="img_size">
-					<div class="carousel-caption">
-						Computer Programming
-					</div>
-				</a>
-			</div>
+		<div class="mySlides fade">
+		  <img src="img/G6.jpg" class="img-fluid">
+		  <div class="floor-text">Third Floor</div>
 		</div>
-		<!--======End of browse by Course======-->
-		<!--======News and Announcement Section======-->
+		<div class="mySlides fade">
+		  <img src="img/G4.jpg" class="img-fluid">
+		  <div class="floor-text">Second Floor</div>
+		</div>
+		<div class="mySlides fade">
+		  <img src="img/G5.jpg" class="img-fluid">
+		  <div class="floor-text">Second Floor</div>
+		</div>
+		<div class="mySlides fade">
+		  <img src="img/G7.jpg" class="img-fluid">
+		  <div class="floor-text">Second Floor</div>
+		</div>
+		<div class="mySlides fade">
+		  <img src="img/G8.jpg" class="img-fluid">
+		  <div class="floor-text">Ground Floor</div>
+		</div>
+		<div class="mySlides fade">
+		  <img src="img/G9.jpg" class="img-fluid">
+		  <div class="floor-text">Ground Floor</div>
+		</div>
+		<div class="mySlides fade">
+		  <img src="img/G10.jpg" class="img-fluid">
+		  <div class="floor-text">Ground Floor</div>
+		</div>
+	  </div>
+  
+  <!-- Dots for Navigation -->
+  <div class="dot-container">
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+	<span class="dot"></span> 
+  </div>
+  
+  <script>
+	let slideIndex = 0;
+	let isPaused = false;
+	let slideshowTimeout;
+	
+	showSlides();
+	
+	function showSlides() {
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  for (let i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+	  }
+	  slideIndex++;
+	  if (slideIndex > slides.length) { slideIndex = 1; }    
+	  for (let i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex - 1].style.display = "block";  
+	  dots[slideIndex - 1].className += " active";
+	
+	  if (!isPaused) {
+		slideshowTimeout = setTimeout(showSlides, 2000);
+	  }
+	}
+	
+	document.querySelector(".slideshow-container").addEventListener("click", () => {
+	  isPaused = !isPaused;
+	  if (!isPaused) {
+		showSlides();
+	  } else {
+		clearTimeout(slideshowTimeout);
+	  }
+	});
+	</script>
+		
+	<div class="container">
+		<br />
+		<h3>Browse books by Category -</h3>
+	</div>
+	<div id="owl-example1" class="owl-carousel container-fluid white_bg" style="box-shadow: none">
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/literature.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Literature Books</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/fiction.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Fiction and Fantasy Books</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/comic.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Comics</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/non-fiction.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Non Fiction</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/network.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Networking</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/program.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Computer Programming</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/algorithm.png" alt="pic" id="img_size" />
+				<div class="carousel-caption">App Development</div>
+			</a>
+		</div>
+	</div>
+	<!--======End of Browse by Category ======-->
+	<!--====== Browse by Courses ======-->
+	<div class="container">
+		<br />
+		<h3>Browse books by Institute Courses -</h3>
+	</div>
+	<div id="owl-example2" class="owl-carousel container-fluid white_bg" style="box-shadow: none">
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/data-structures.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Data Structures</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/daa.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Design and Analysis of Algorithms</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/signal-processing.png" alt="pic" id="img_size" />
+				<div class="carousel-caption">Signal Processing</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/algorithm.png" alt="pic" id="img_size" />
+				<div class="carousel-caption">App Development</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/app.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Software Development</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/network.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Networking</div>
+			</a>
+		</div>
+		<div class="owl-item">
+			<br />
+			<a href="category.html">
+				<img src="img/program.jpg" alt="pic" id="img_size" />
+				<div class="carousel-caption">Computer Programming</div>
+			</a>
+		</div>
+	</div>
+	<!--======End of browse by Course======-->
+	<!--======News and Announcement Section======-->
 
-		<div class="container white_bg" id="news-announcement"><br>
+	<div class="container white_bg" id="news-announcement">
+		<br />
 
-			<div class="col-lg-6">
-				<table class="table table-bordered">
-					<tr id="heading">
-						<td>
-							<div id="heading">
-								<center>News</center>
-							</div>
-						</td>
-					</tr>
-					<tr style="padding-bottom: 0px;">
-						<td>
-							<div id = "scrollbar">
-								<table class="table table-bordered table-hover" id="MyTable">
-									<tr>
-										<td>
-											<h3>VIT Chennai's Library website is appreciated by famous professors all around the world !</h3>
-											<img src="img/img.jpg" style="float: right; height:100px; width: 100px;">
-											<div>
-												<p>
-													INDEM members of VIT Chennai have worked hard and built the college's library website. The new website was launched a day ago. The famous author Charles Leiserson himself quoted that VIT Chennai's website took him by surprise when one of his friends was showing him the content. He says that it is intuitive, modern-looking, and designed to encourage the younger generations to develop a friendly outlook on a library.
-												</p>
-											</div><br>
-											<button class="btn btn-primary btn-md" style="float: right;" data-toggle="modal"
-												  data-target="#myModal">
-												Learn More...
-											</button>
-										</td>
-									</tr>
-									<tr>
-										<td>
-											<h3>VITC's Library to receive sponsorship from UN after the success of their website !</h3>
-											<img src="img/img.jpg" style="float: right; height:100px; width: 100px; margin: 20px;">
-											<div>
-												<p>
-													Good news VITians ! Now, our library will have many more books and resources to help you
-													with your career. The United Nations have agreed to sponsor the growth of the VITC's library.
-													The UN had actually had short listed 750 institution libraries from all over the world to make 
-													develop them vastly so that the become the foundations of quality education to be known all over
-													the world. INDEM members of VIT have worked hard and built the colleges library website.
-													The new website was launched a day ago. The website's success in the social media soon caught
-													the UN's attention, which gave this incredible opportunity to VITC.
-												</p>
-											</div><br>
-											<button class="btn btn-primary btn-md" style="float: right;" data-toggle="modal"
-												  data-target="#myModal">
-												Learn More...
-											</button>
-										</td>
-									</tr>
-								</table>
-							</div>
-						</td>
-					</tr>
-
-				</table></div>
-			<div class="col-lg-6">
-				<table class="table table-bordered">
-					<tr id="heading">
-						<td>
-					<center><font id="heading_font">New Arrivals</font></center>
+		<div class="col-lg-6">
+			<table class="table table-bordered">
+				<tr id="heading">
+					<td>
+						<div id="heading">
+							<center>News</center>
+						</div>
 					</td>
-					</tr>
-					<tr>
-						<td>
-							<table class="table table-bordered" id="MyTable" style="margin-bottom: 0px;">
+				</tr>
+				<tr style="padding-bottom: 0px">
+					<td>
+						<div id="scrollbar">
+							<table class="table table-bordered table-hover" id="MyTable">
 								<tr>
-									<td style="padding: 10px;">
-										<div  class="body-scrollbar new-arrivals" style="padding: 0px 20px 0px 0px; height: 277px;">
-											<ul>
-												<li><a href="view.html">How to build a Billion Dollar App by George Berkowski</a></li>
-												<li><a href="view.html">SCJP Sun Certified Programmer for Java 6 Study Exam 310-065 Guide 1st Edition</a></li>
-												<li><a href="view.html">Data Structures and Algorithms Made Easy : Data Structure and Algorithmic Puzzles by Narasimha Karumanchi</a></li>
-												<li><a href="view.html">Let Us C ! by Kanetkar</a></li>
-												<li><a href="view.html">Java - The Complete Reference (English) 7th Edition by Herbert Schildt</a></li>
-												<li><a href="view.html">Data Structures And Algorithms Made Easy In Java 2nd Edition by Narasimha Karumanchi</a></li>
-												<li><a href="view.html">The C++ Programming Language (English) 3rd Edition by  Bjarne Stroustrup</a></li>
-												<li><a href="view.html">Design Patterns : Elements of Reusable Object-Oriented Software (English) 1st Edition by Gang of Four</a></li>
-												<li><a href="view.html">Php: The Complete Reference (English) 1st Edition by Steven Holzner</a></li>
-												<li><a href="view.html">Linux Kernel Development (English) by Robert Love</a></li>
-											</ul>
+									<td>
+										<h3>
+											VIT Chennai's Library website is appreciated by famous
+											professors all around the world !
+										</h3>
+										<img src="img/img.jpg" style="float: right; height: 100px; width: 100px" />
+										<div>
+											<p>
+												INDEM members of VIT Chennai have worked hard and
+												built the college's library website. The new website
+												was launched a day ago. The famous author Charles
+												Leiserson himself quoted that VIT Chennai's website
+												took him by surprise when one of his friends was
+												showing him the content. He says that it is intuitive,
+												modern-looking, and designed to encourage the younger
+												generations to develop a friendly outlook on a
+												library.
+											</p>
 										</div>
+										<br />
+										<button class="btn btn-primary btn-md" style="float: right" data-toggle="modal"
+											data-target="#myModal">
+											Learn More...
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<h3>
+											VITC's Library to receive sponsorship from UN after the
+											success of their website !
+										</h3>
+										<img src="img/img.jpg" style="
+                          float: right;
+                          height: 100px;
+                          width: 100px;
+                          margin: 20px;
+                        " />
+										<div>
+											<p>
+												Good news VITians ! Now, our library will have many
+												more books and resources to help you with your career.
+												The United Nations have agreed to sponsor the growth
+												of the VITC's library. The UN had actually had short
+												listed 750 institution libraries from all over the
+												world to make develop them vastly so that the become
+												the foundations of quality education to be known all
+												over the world. INDEM members of VIT have worked hard
+												and built the colleges library website. The new
+												website was launched a day ago. The website's success
+												in the social media soon caught the UN's attention,
+												which gave this incredible opportunity to VITC.
+											</p>
+										</div>
+										<br />
+										<button class="btn btn-primary btn-md" style="float: right" data-toggle="modal"
+											data-target="#myModal">
+											Learn More...
+										</button>
 									</td>
 								</tr>
 							</table>
-						</td>
-					</tr>
-				</table>
-			</div>
-			<br>
+						</div>
+					</td>
+				</tr>
+			</table>
 		</div>
-		<!--=========Footer Part======-->
+		<div class="col-lg-6">
+			<table class="table table-bordered">
+				<tr id="heading">
+					<td>
+						<center>
+							<font id="heading_font">New Arrivals</font>
+						</center>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<table class="table table-bordered" id="MyTable" style="margin-bottom: 0px">
+							<tr>
+								<td style="padding: 10px">
+									<div class="body-scrollbar new-arrivals"
+										style="padding: 0px 20px 0px 0px; height: 277px">
+										<ul>
+											<li>
+												<a href="view.html">How to build a Billion Dollar App by George
+													Berkowski</a>
+											</li>
+											<li>
+												<a href="view.html">SCJP Sun Certified Programmer for Java 6 Study Exam
+													310-065 Guide 1st Edition</a>
+											</li>
+											<li>
+												<a href="view.html">Data Structures and Algorithms Made Easy : Data
+													Structure and Algorithmic Puzzles by Narasimha
+													Karumanchi</a>
+											</li>
+											<li><a href="view.html">Let Us C ! by Kanetkar</a></li>
+											<li>
+												<a href="view.html">Java - The Complete Reference (English) 7th Edition
+													by Herbert Schildt</a>
+											</li>
+											<li>
+												<a href="view.html">Data Structures And Algorithms Made Easy In Java
+													2nd Edition by Narasimha Karumanchi</a>
+											</li>
+											<li>
+												<a href="view.html">The C++ Programming Language (English) 3rd Edition
+													by Bjarne Stroustrup</a>
+											</li>
+											<li>
+												<a href="view.html">Design Patterns : Elements of Reusable
+													Object-Oriented Software (English) 1st Edition by
+													Gang of Four</a>
+											</li>
+											<li>
+												<a href="view.html">Php: The Complete Reference (English) 1st Edition
+													by Steven Holzner</a>
+											</li>
+											<li>
+												<a href="view.html">Linux Kernel Development (English) by Robert
+													Love</a>
+											</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br />
+	</div>
+	<!--=========Footer Part======-->
 
-		<div class="container-fluid" id="footer1">
-			<div class="col-lg-2 col-md-offset-1 hidden-xs">
-				<div class="row">
-					<div class="col-lg-12">&nbsp;</div>
-				</div>
-				<img class="hidden-xs" src="img/img.jpg" id="end-logo">
-				<div class="row">
-					<div class="col-lg-12">&nbsp;</div>
-				</div>
+	<div class="container-fluid" id="footer1">
+		<div class="col-lg-2 col-md-offset-1 hidden-xs">
+			<div class="row">
+				<div class="col-lg-12">&nbsp;</div>
 			</div>
-			<div class="col-lg-6">
-				<div class="row">
-					<div class="col-lg-12">&nbsp;</div>
-				</div>
-				<center><font class="footer_font">Vellore Institute of Technology<br>
-					(Deemed University)<br>
-					Kellambakkam, Chennai, TN-600127<br>
-					Telefax - (05368)273222</font></center>
-				<div class="row">
-					<div class="col-lg-12">&nbsp;</div>
-				</div>
-			</div>
-			<div class="col-lg-3 hidden-xs" style="padding: 25px 0px 0px 0px;">
-				<center>
-					<img src="img/flag3.png" id="flag">
-					<script language="javascript" src="js/live_clock.js"></script>
-				</center>
+			<img class="hidden-xs" src="img/img.jpg" id="end-logo" />
+			<div class="row">
+				<div class="col-lg-12">&nbsp;</div>
 			</div>
 		</div>
-
-		<div class="container-fluid" id="footer2">
+		<div class="col-lg-6">
 			<div class="row">
 				<div class="col-lg-12">&nbsp;</div>
 			</div>
 			<center>
-				<a href="index.html"><button class="button">Home</button></a>&nbsp;&nbsp;|&nbsp;
-				<a href="search.html"><button class="button">Search for Books</button></a>&nbsp;&nbsp;|&nbsp;
-				<a href="author.html"><button class="button">Search by Author</button></a>&nbsp;&nbsp;|&nbsp;
-				<a href="stats.html"><button class="button">Statistics</button></a>&nbsp;&nbsp;|&nbsp;
-				<a href="status.html"><button class="button">Status</button></a>
+				<font class="footer_font">Vellore Institute of Technology<br />
+					(Deemed University)<br />
+					Kellambakkam, Chennai, TN-600127<br />
+					Telefax - (05368)273222</font>
 			</center>
 			<div class="row">
 				<div class="col-lg-12">&nbsp;</div>
 			</div>
 		</div>
-		<!--===============Modal part==============-->
+		<div class="col-lg-3 hidden-xs" style="padding: 25px 0px 0px 0px">
+			<center>
+				<img src="img/flag3.png" id="flag" />
+				<script language="javascript" src="js/live_clock.js"></script>
+			</center>
+		</div>
+	</div>
 
-		<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-			<div class="modal-dialog">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="close-button">&times;</button>
-						<h4 class="modal-title" id="myModalLabel">VIT Library's Website appreciated by Professors</h4>
-					</div>
-					<div class="modal-body">
-						<p>
-							INDEM members of VIT Chennai have worked hard and built the college's library website. The new website was launched a day ago. The famous author Charles Leiserson himself quoted that VIT Chennai's website took him by surprise when one of his friends was showing him the content. He says that it is intuitive, modern-looking, and designed to encourage the younger generations to develop a friendly outlook on a library.
-						</p>
-					
-					</div>
-					<div class="modal-footer">
-						<button class="btn btn-primary btn-md" data-dismiss="modal">Close</button>
-					</div>
+	<div class="container-fluid" id="footer2">
+		<div class="row">
+			<div class="col-lg-12">&nbsp;</div>
+		</div>
+		<center>
+			<a href="index.html"><button class="button">Home</button></a>&nbsp;&nbsp;|&nbsp;
+			<a href="search.html"><button class="button">Search for Books</button></a>&nbsp;&nbsp;|&nbsp;
+			<a href="author.html"><button class="button">Search by Author</button></a>&nbsp;&nbsp;|&nbsp;
+			<a href="stats.html"><button class="button">Statistics</button></a>&nbsp;&nbsp;|&nbsp;
+			<a href="status.html"><button class="button">Status</button></a>
+		</center>
+		<div class="row">
+			<div class="col-lg-12">&nbsp;</div>
+		</div>
+	</div>
+	<!--===============Modal part==============-->
+
+	<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="close-button">
+						&times;
+					</button>
+					<h4 class="modal-title" id="myModalLabel">
+						VIT Library's Website appreciated by Professors
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p>
+						INDEM members of VIT Chennai have worked hard and built the
+						college's library website. The new website was launched a day ago.
+						The famous author Charles Leiserson himself quoted that VIT
+						Chennai's website took him by surprise when one of his friends was
+						showing him the content. He says that it is intuitive,
+						modern-looking, and designed to encourage the younger generations
+						to develop a friendly outlook on a library.
+					</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-primary btn-md" data-dismiss="modal">
+						Close
+					</button>
 				</div>
 			</div>
 		</div>
-		<div class="fixed-side-social-container">
-			<a class="social-icon twitter-icon" href="#" target="new" title="Follow us on Twitter"><span></span></a>
-			<a class="social-icon facebook-icon" href="#" target="new" title="Like us on Facebook"><span></span></a>
-		</div>
-		<script src="jquery/jquery.min.js"></script>
-		<script src="js/bootstrap.js"></script>
-		<script src="js/owl.carousel.js"></script>
-	</body>
+	</div>
+	<div class="fixed-side-social-container">
+		<a class="social-icon twitter-icon" href="#" target="new" title="Follow us on Twitter"><span></span></a>
+		<a class="social-icon facebook-icon" href="#" target="new" title="Like us on Facebook"><span></span></a>
+	</div>
+	<script src="jquery/jquery.min.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.js"></script>
+</body>
+
 </html>
