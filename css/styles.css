@@ -1,0 +1,141 @@
+body {
+    background-image: url(../img/pattern8.png) ;
+    background-repeat: repeat;
+ }
+ 
+.fixed-side-social-container {
+    margin-bottom: 0px;
+}
+ 
+.new-arrivals ul li a{
+    color:#262626;
+    font-size: 14pt;
+}
+
+.new-arrivals ul li a:hover{
+    text-decoration: none;
+    color: #1873cd;
+}
+
+  .white_bg {
+    background-color: #ffffff;
+    background-image: url(../img/pattern8.png) ;
+ background-repeat: repeat;
+ }
+
+.modal-header {     /*Changes made from that of Bootstrap.css*/
+    background-color: #000000;
+    background:#eaeaea url(../img/pattern4.png) repeat;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  color:  #ffffff;
+}
+
+.modal-body, .modal-footer {
+    background:#eaeaea url(../img/pattern7.png) repeat;
+}
+
+.modal-footer {
+    margin-top: 0px;
+    border-top: solid thin LightGray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#close-button {
+    outline: none;
+    padding: 2px 6px 4px 6px;
+    background-color: Gray;
+    border-radius: 4px;
+ }
+
+.owl-carousel {
+    -webkit-box-shadow: 0 8px 6px -6px black;
+	   -moz-box-shadow: 0 1px 10px 3px black;
+	        box-shadow: 0 1px 10px 3px black;
+}
+
+#img_size {
+    height: 360px;
+    width:  425px;
+    box-shadow: 0px 0px 8px 2px #000;
+}
+
+
+#news-announcement {
+    padding:  0px 0px 0px 0px;
+}
+
+#MyTable {
+     background:#eaeaea url(../img/pattern7.png) repeat;
+}
+
+.owl-wrapper-outer {
+    height: 400px;
+}
+
+.carousel-caption {
+    background-color: #000;
+    opacity: 0.8;
+    padding: 5px 5px 5px 5px;
+}
+
+body div h1, h2 {
+    color : White;
+}
+
+#scrollbar {
+    border : none;
+    overflow : scroll;
+    height: 300px;
+    overflow-y : scroll;
+    overflow-x : hidden;
+    padding-right : 7px;
+}
+
+#scrollbar::-webkit-scrollbar {
+    width: 7px;
+}
+
+#scrollbar::-webkit-scrollbar-track {
+    background-color: Gray;
+    background:#eaeaea url(../img/pattern7.png) repeat;
+    border-radius: 3px;
+}
+ 
+#scrollbar::-webkit-scrollbar-thumb {
+    background-color: Black;
+    background:#eaeaea url(../img/pattern4.png) repeat;
+    border-radius: 3px;
+}
+
+.body-scrollbar {
+    border : none;
+    overflow : scroll;
+    height: 300px;
+    overflow-y : scroll;
+    overflow-x : hidden;
+}
+
+.body-scrollbar::-webkit-scrollbar {
+    width: 7px;
+}
+
+.body-scrollbar::-webkit-scrollbar-track {
+    background-color: Gray;
+    background:#eaeaea url(../img/pattern8.png) repeat;
+    border-radius: 3px;
+}
+
+.body-scrollbar::-webkit-scrollbar-thumb {
+    background-color: Black;
+    background:#eaeaea url(../img/pattern4.png) repeat;
+    border-radius: 3px;
+}
+
+#heading {
+    background-color : #000;
+    background:#eaeaea url(../img/pattern4.png) repeat;
+    color : #fff;
+    font-size: x-large;
+}
