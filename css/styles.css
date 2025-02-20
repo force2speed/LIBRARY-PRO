@@ -14,7 +14,7 @@ body {
 
 .new-arrivals ul li a:hover{
     text-decoration: none;
-    color: #1873cd;
+    color: #003870;
 }
 
   .white_bg {
@@ -25,7 +25,7 @@ body {
 
 .modal-header {     /*Changes made from that of Bootstrap.css*/
     background-color: #000000;
-    background:#eaeaea url(../img/pattern4.png) repeat;
+    background:#eaeaea url(../img/temp.png) repeat;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   color:  #ffffff;
@@ -105,7 +105,7 @@ body div h1, h2 {
  
 #scrollbar::-webkit-scrollbar-thumb {
     background-color: Black;
-    background:#eaeaea url(../img/pattern4.png) repeat;
+    background:#eaeaea url(../img/temp.png) repeat;
     border-radius: 3px;
 }
 
@@ -129,13 +129,13 @@ body div h1, h2 {
 
 .body-scrollbar::-webkit-scrollbar-thumb {
     background-color: Black;
-    background:#eaeaea url(../img/pattern4.png) repeat;
+    background:#eaeaea url(../img/temp.png) repeat;
     border-radius: 3px;
 }
 
 #heading {
     background-color : #000;
-    background:#eaeaea url(../img/pattern4.png) repeat;
+    background:#eaeaea url(../img/temp.png) repeat;
     color : #fff;
     font-size: x-large;
 }
